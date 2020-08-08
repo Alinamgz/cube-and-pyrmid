@@ -72,7 +72,9 @@ void mx_cube(int n) {
     int diagonal = n / 2;
     int max_h = n + diagonal + 3;
 
-    if (n <= 1) return;
+    if (n <= 1) 
+        return;
+        
     for (int lvl = 1; lvl <= max_h; lvl++) {
         edge_lines(lvl, diagonal, horizontal, max_h);
         top_panel(lvl, diagonal, horizontal);
