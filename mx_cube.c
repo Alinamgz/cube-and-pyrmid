@@ -17,7 +17,6 @@ static void edge_lines(int lvl, int diagonal, int horizontal, int max_h) {
                 mx_printchar(' ');
             mx_printchar('|');
         }
-        mx_printchar('\n');
     }
 }
 
@@ -32,7 +31,6 @@ static void top_panel(int lvl, int diagonal, int horizontal) {
         for (int col = 0; col < lvl - 2; col++)
             mx_printchar(' ');
         mx_printchar('|');
-        mx_printchar('\n');
     }
 }
 
@@ -45,7 +43,6 @@ static void front_block(int lvl, int diagonal, int horizontal, int max_h) {
             else
                 mx_printchar(' ');
         }
-        mx_printchar('\n');
     }
 }
 
@@ -63,7 +60,6 @@ static void front_corner(int lvl, int diagonal, int horizontal, int max_h) {
             mx_printchar('+');
         else
             mx_printchar('/');
-        mx_printchar('\n');
     }
 }
 
@@ -80,5 +76,13 @@ void mx_cube(int n) {
         top_panel(lvl, diagonal, horizontal);
         front_block(lvl, diagonal, horizontal, max_h);
         front_corner(lvl, diagonal, horizontal, max_h);
+        mx_printchar('\n');
     }
+}
+
+//  ======== DELETE ME ! ==========
+int main(void) {
+
+mx_cube(8);
+    return 0;
 }
