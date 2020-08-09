@@ -79,10 +79,3 @@ void mx_cube(int n) {
         mx_printchar('\n');
     }
 }
-
-//  ======== DELETE ME ! ==========
-int main(void) {
-
-mx_cube(8);
-    return 0;
-}
